@@ -1,0 +1,37 @@
+.cbo-stripe-config {
+    .cbo-loader {
+        margin-bottom: 2px;
+    }
+    .cbo-onboard-step {
+        min-height: 535px;
+        padding: 150px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .cbo-onboard-content {
+        max-width: 52%;
+    }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cbo-stripe-config .cbo-onboard-content {
+        max-width: 80%;
+    }
+}
+
+// Mobile
+@media (max-width: 767px) {
+    .cbo-stripe-config {
+        .cbo-onboard-content {
+            max-width: 100%;
+        }
+        .cbo-onboard-step {
+            min-height: 300px;
+            padding: 100px 20px;
+        }
+    }
+}

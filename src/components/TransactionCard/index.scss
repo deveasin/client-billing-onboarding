@@ -1,0 +1,27 @@
+.cbo-transaction-card {
+    display: flex;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 15px 30px;
+    margin: 0 auto;
+
+    &-title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: var(--primary_color);
+        
+        .fee {
+            color: #1A1A1A;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.cbo-select {
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 13px 15px;
+    min-width: 360px;
+    appearance: none;
+    position: relative;
+
+    font-family: var(--roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font_size);
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    color: var(--primary_color);
+
+    background-image: url('../../assets/images/angle-down-icon.png');
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+// Mobile
+@media (max-width: 767px) {
+    .cbo-select {
+        width: 100%;
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+.cbo-checkbox {
+    font-family: var(--roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font_size);
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    color: var(--secondary_color);
+    display: inline-flex;
+    align-items: center;
+
+    input {
+        background: #FFFFFF;
+        border: 1px solid #AAAAAA;
+        border-radius: 4px;
+        transform: scale(1.2);
+        position: relative;
+        top: -1px;
+    }
+
+    span {
+        padding-left: 10px;
+    }
+}
+
+// Mobile
+@media (max-width: 767px) {
+    .cbo-checkbox {
+        font-size: 10px;
+        input {
+            transform: scale(1);
+        }
+        span {
+            padding-left: 5px;
+        }
+    }
+}

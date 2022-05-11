@@ -1,0 +1,39 @@
+.cbo-loader {
+    text-align: center;
+    min-height: 90px;
+}
+.cbo-loader-ring {
+    display: inline-block;
+    position: relative;
+  }
+  .cbo-loader-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    margin: 5.86667px;
+    border: 5.86667px solid #AAAAAA;
+    border-radius: 50%;
+    animation: cbo-loader-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #AAAAAA transparent transparent transparent;
+    margin-left: -22px;
+  }
+  .cbo-loader-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .cbo-loader-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .cbo-loader-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes cbo-loader-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

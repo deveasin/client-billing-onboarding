@@ -1,0 +1,21 @@
+.cbo-back-button {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.26px;
+        color: var(--secondary_color);
+        padding-left: 8px;
+        transition: all .4s;
+
+        &:hover {
+            color: var(--hover_color);
+        }
+    }
+}

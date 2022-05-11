@@ -1,0 +1,45 @@
+.cbo-onboard-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    &-title,
+    &-step {
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &-title {
+        font-size: var(--font_size);
+        line-height: 30px;
+        letter-spacing: 0.26px;
+        color: var(--primary_color);
+        margin: 0;
+    }
+
+    &-step {
+        font-size: 13px;
+        line-height: 25px;
+        text-align: right;
+        letter-spacing: 0.26px;
+        color: #333333;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &-dots {
+        display: flex;
+        padding-left: 5px;
+        li {
+            height: 4px;
+            width: 4px;
+            background-color: #aaa;
+            border-radius: 100px;
+            margin-left: 10px;
+            &.active {
+                background-color: #333333;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.cbo-toast {
+    width: 300px;
+    background: #E6E6E6;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    // left: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    left: -300px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+
+    &.active {
+        left: 30px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-title,
+    &-time-text {
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.26px;
+    }
+
+    &-title {
+        font-size: 13px;
+        color: var(--primary_color);
+        margin: 0;
+    }
+
+    &-time-text {
+        font-size: 9px;
+        color: var(--secondary_color);
+    }
+
+    &-icon {
+        margin-right: 12px;
+    }
+}
